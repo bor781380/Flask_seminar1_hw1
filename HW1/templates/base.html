@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <h1> Магазин одежды и обуви </h1>
+    <hr>
+
+</head>
+<body>
+<div class="container-fluid">
+    <ul class="nav nav-pills justify-content-end align-items-end">
+        <li class="nav-item"><a href="/main/" class="nav-link">О нас</a></li>
+        <li class="nav-item"><a href="/contacts/" class="nav-link">Контакты</a></li>
+
+    </ul>
+    <hr>
+    {% block content %}
+    <h3><mark>Разделы магазина</mark></h3>
+    {% endblock %}
+    <hr>
+
+</div>
+<nav>
+    <ul class="nav nav-pills justify-content-end align-items-end">
+        <li class="nav-item"><a href="/clothes/" class="nav-link">Одежда</a></li>
+        <li class="nav-item"><a href="/shoes/" class="nav-link">Обувь</a></li>
+        <li class="nav-item"><a href="/jackets/" class="nav-link">Куртки</a></li>
+    </ul>
+</nav>
+        {% block items %}
+
+        {% endblock %}
+        <hr>
+        <p>2024 Все права защищены &copy;</p>
+
+
+</body>
+</html>
